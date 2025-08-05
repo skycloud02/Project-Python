@@ -1,0 +1,11 @@
+[
+{"type": "history_request", "timestamp": "2025-07-30T13:25:08.005516"},
+{"type": "history_request", "timestamp": "2025-07-30T13:25:08.024551"},
+{"type": "compute_request", "timestamp": "2025-07-30T13:25:21.873443", "operation": "factorial", "operand": 5},
+{"type": "cache_miss", "timestamp": "2025-07-30T13:25:21.884444", "key": "factorial:5"},
+{"type": "compute_success", "timestamp": "2025-07-30T13:25:21.907090", "operation": "factorial", "operand": 5, "result": 120.0, "db_id": 47},
+{"type": "history_request", "timestamp": "2025-07-30T13:25:21.917163"},
+{"type": "compute_request", "timestamp": "2025-07-30T13:25:34.529201", "operation": "factorial", "operand": 5},
+{"type": "cache_hit", "timestamp": "2025-07-30T13:25:34.534203", "key": "factorial:5"},
+{"type": "history_request", "timestamp": "2025-07-30T13:25:34.555724"}
+]
