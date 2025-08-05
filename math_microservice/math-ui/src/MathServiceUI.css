@@ -1,0 +1,107 @@
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field input,
+.field select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.api-input-group {
+  display: flex;
+  gap: 5px;
+}
+
+.toggle-btn {
+  padding: 8px;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.compute-btn {
+  width: 100%;
+  padding: 10px;
+  font-weight: bold;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.compute-btn:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.result-box {
+  background-color: #e6f7ff;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.history-box {
+  margin-top: 30px;
+}
+
+.history-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.history-box li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.fancy {
+  background: linear-gradient(to right, #f0f4f7, #e3eaf0);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.panel {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.history-box, .log-box {
+  flex: 1 1 50%;
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
