@@ -1,0 +1,30 @@
+powershell:
+- Run as administrator
+- wsl -d Ubuntu
+- redis-server
+- redis-cli ping
+
+VSCODE:
+Terminal 1:
+- Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+- venv\Scripts\activate
+- cd C:\kafka\kafka_2.12-3.9.1
+- .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties 
+
+Terminal 2:
+- Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+- venv\Scripts\activate
+- cd C:\kafka\kafka_2.12-3.9.1
+- .\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Terminal 3:
+- Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+- venv\Scripts\activate
+- cd math_microservice  
+- uvicorn app.main:app --reload
+
+Terminal 4:
+- Set-ExecutionPolicy -ExecutionPolicy Bypass -Scope Process
+- venv\Scripts\activate
+- cd math_microservice\math-ui
+- npm start
